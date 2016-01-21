@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+{% load staticfiles %}
+
+<html lang = "en">
+<head>
+	<title>{% block title %}Response{% endblock %}</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+	<link href="{% static 'css/style1.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+<div id = "container">
+	<div id = "banner">
+		<h1>Survey</h1>
+	</div>
+	{% block content %}
+	<p class ="para">oops, looks like something went wrong</p>
+	{% endblock %}
+	{%block footer%}
+	<div id = "footer">
+	<hr>
+	<p class = "para"><a id = "about" href="">About Us</a></p>
+	</div>
+	{% endblock %}
+</div>
+</body>
+</html>

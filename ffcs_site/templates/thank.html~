@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Thank You{% endblock %}
+
+{% block content %}
+<link href="style.css" rel="stylesheet" type="text/css" />
+<p class ="para">Your response has been recorded</p>
+<br>
+<p class ="para">Thank You</p>
+
+
+{% endblock %}

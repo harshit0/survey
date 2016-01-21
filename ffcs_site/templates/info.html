@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Project Info{% endblock %}
+
+{% block content %}
+<link href="style.css" rel="stylesheet" type="text/css" />
+<form action = '/info/' method = 'POST' id = "form">{% csrf_token %}
+	<table id = "formtable">
+		{{ form.as_table }}
+	</table>
+	<p id = "para"><input type = 'submit' value= 'next'></p>
+</form>
+{% endblock %}

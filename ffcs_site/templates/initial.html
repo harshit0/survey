@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% block content %}
+<link href= "{% static 'css/style1.css' %}" rel="stylesheet"/>
+<h1 id = "initialH">Choose from below</h1>
+<form action = '/initial/' method = 'POST'>{% csrf_token %}
+	<table id = "initialTable">
+		{{ form.as_table }}
+	</table>
+	<p><input type = 'submit' value = 'next'></p>
+</form>
+{% endblock %}

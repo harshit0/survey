@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Academic Info{% endblock %}
+
+{% block content %}
+<link href="style.css" rel="stylesheet" type="text/css" />
+<form id = "formtable" action = '/step3/' method = 'POST'>{% csrf_token %}
+	<table>
+		{{ form.as_table }}
+	</table>
+	<p id = "para"><input type = 'submit' value = 'submit'></p>
+</form>
+{% endblock %}

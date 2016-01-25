@@ -56,9 +56,11 @@ height: 100%;
 #initialH{
     padding: 5%;
 }
-#initialTable{
+.table{
     table-layout: auto;
     text-align: inherit;
+}
+#initialTable{
     border-spacing: 75px 20px;
         
 }
@@ -66,16 +68,15 @@ height: 100%;
     padding: 5% 0px;
 }
 #step2Table{
-        table-layout: auto;
-    text-align: inherit;
     border-spacing: 75px 2px;
 }
 #step3Table{
-    table-layout: auto;
-    text-align: inherit;
     border-spacing: 65px;
 }
 #thank{
     padding-top: 25%;
     font: 250% verdana,"Trebuchet MS",arial,tahoma,sans-serif;
+}
+#formtable{
+    border-spacing: 150px 50px;
 }

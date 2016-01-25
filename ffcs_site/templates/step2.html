@@ -6,7 +6,7 @@
 <link href="style.css" rel="stylesheet" type="text/css" />
 <h1 id = "step2H">Project Response</h1>
 <form id = "formtable" action = '/step2/' method = 'POST'>{% csrf_token %}
-	<table id="step2Table">
+	<table class = "table" id="step2Table">
 		{{ form.as_table }}
 	</table>
 	<p id="para"><input type = 'submit' value = 'next'></p>

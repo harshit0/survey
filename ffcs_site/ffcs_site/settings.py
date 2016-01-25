@@ -56,7 +56,7 @@ ROOT_URLCONF = 'ffcs_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/techtron/gitRepo/surveySite/site_dev/ffcs_site/templates/'],
+        'DIRS': ['/home/techtron/gitRepo/survey/ffcs_site/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
